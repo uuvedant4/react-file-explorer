@@ -1,61 +1,70 @@
 export const filesData = {
+  id: "1",
   name: "root",
   isFolder: true,
-  subFiles: [
+  items: [
     {
-      name: "file1.txt",
-      isFolder: false,
-    },
-    {
-      name: "file2.txt",
-      isFolder: false,
-    },
-    {
-      name: "file6.txt",
-      isFolder: false,
-    },
-    {
-      name: "file7.txt",
-      isFolder: false,
-    },
-    {
-      name: "folder1",
+      id: "2",
+      name: "public",
       isFolder: true,
-      subFiles: [
+      items: [
         {
-          name: "file3.txt",
-          isFolder: false,
-        },
-        {
-          name: "file4.txt",
-          isFolder: false,
-        },
-        {
-          name: "folder2",
+          id: "3",
+          name: "public nested 1",
           isFolder: true,
-          subFiles: [
+          items: [
             {
-              name: "file5.txt",
+              id: "4",
+              name: "index.html",
               isFolder: false,
+              items: [],
+            },
+            {
+              id: "5",
+              name: "hello.html",
+              isFolder: false,
+              items: [],
             },
           ],
         },
+        {
+          id: "6",
+          name: "public_nested_file",
+          isFolder: false,
+          items: [],
+        },
       ],
     },
-
     {
-      name: "folder3",
+      id: "7",
+      name: "src",
       isFolder: true,
-      subFiles: [
+      items: [
         {
-          name: "file8.txt",
+          id: "8",
+          name: "App.js",
           isFolder: false,
+          items: [],
         },
         {
-          name: "file9.txt",
+          id: "9",
+          name: "Index.js",
           isFolder: false,
+          items: [],
+        },
+        {
+          id: "10",
+          name: "styles.css",
+          isFolder: false,
+          items: [],
         },
       ],
+    },
+    {
+      id: "11",
+      name: "package.json",
+      isFolder: false,
+      items: [],
     },
   ],
 };
